@@ -1,4 +1,6 @@
-## Q1.What is HTML and what is the difference between HTML and HTML5?
+---
+
+## Q1. What is HTML and what is the difference between HTML and HTML5?
 
 HTML (HyperText Markup Language) is the standard language used to create and structure web pages. It helps define elements like headings, paragraphs, images, links, tables, and forms on a website.
 
@@ -6,260 +8,153 @@ The main difference between HTML and HTML5 is that HTML5 is the newer version wi
 
 ---
 
-## Q2.What are semantic HTML tags?
+## Q2. What are semantic HTML tags?
 
-1. Semantic HTML tags are tags that clearly describe the purpose and meaning of the content they contain.
+1. Semantic HTML tags clearly describe the meaning of content.
+2. They improve readability for developers and browsers.
+3. They help with SEO and accessibility.
+4. They organize code better.
 
-2. They make the structure of a webpage easier to understand for developers and browsers.
-
-3. Semantic tags improve website readability and code organization.
-
-4. They also help with SEO (Search Engine Optimization) and accessibility.
-
-5. Examples of semantic HTML tags:
-
-   * `<header>` → Defines the top section of a page
-   * `<nav>` → Defines navigation links
-   * `<section>` → Defines a section of content
-   * `<article>` → Defines independent content or articles
-   * `<aside>` → Defines side content
-   * `<footer>` → Defines the bottom section of a page
+### Examples:
+- `<header>` → Top section
+- `<nav>` → Navigation links
+- `<section>` → Content section
+- `<article>` → Independent content
+- `<aside>` → Side content
+- `<footer>` → Bottom section
 
 ---
 
-## Q3.What is the difference between <div> and <span> tags?
+## Q3. Difference between `<div>` and `<span>` tags
 
-`<div>` and `<span>` are both HTML tags used to group content, but they are used in different ways:
-
-* `<div>` is a block-level element. It starts on a new line and takes full width. It is used to group larger sections of content.
-
-* `<span>` is an inline element. It does not start on a new line and only takes as much space as needed. It is used to style or group small parts of text.
-
-Simple difference:
-
-* `<div>` → used for layout (big sections)
-* `<span>` → used for small text parts or styling inline content
+- `<div>` is a block-level element. It starts on a new line and takes full width. Used for layout.
+- `<span>` is an inline element. It does not start on a new line and takes only required space. Used for styling small text.
 
 ---
 
-## Q4.Explain the difference between block-level elements and inline elements?
+## Q4. Block-level vs Inline elements
 
-Block-level elements:
+### Block-level elements:
+- Start on a new line  
+- Take full width  
+- Used for large sections  
 
-Start on a new line  
-Take full width of the page  
-Used for large sections of content  
-Examples: <div>, <p>, <h1>
+**Examples:** `<div>`, `<p>`, `<h1>`
 
-Inline elements:
+### Inline elements:
+- Do not start on a new line  
+- Take only required space  
+- Used inside block elements  
 
-Do not start on a new line  
-Take only as much width as needed  
-Used inside block elements for small parts of content  
-Examples: <span>, <a>, <strong>
-
-Simple difference:
-Block elements are for structure, while inline elements are for styling or small content inside that structure.
+**Examples:** `<span>`, `<a>`, `<strong>`
 
 ---
 
-## Q5.What is the purpose of the DOCTYPE declaration in HTML?
+## Q5. Purpose of DOCTYPE in HTML
 
-The DOCTYPE declaration tells the browser which version of HTML the page is written in.
+The DOCTYPE declaration tells the browser which version of HTML is used.
 
-It helps the browser to:
-- Render the page correctly  
+### It helps:
+- Render page correctly  
 - Avoid quirks mode  
-- Follow modern HTML rules  
+- Follow modern rules  
 
-In HTML5:
+### HTML5 DOCTYPE:
 ```html
 <!DOCTYPE html>
-Q6.What is the difference between id and class attributes?
 
-id attribute:
+Q6. Difference between id and class
+id:
+Unique per page
+Used once
+class:
+Can be used multiple times
+Used for grouping
 
-Unique for one element
-Used only once per page
-
-class attribute:
-
-Can be used on multiple elements
-Used for grouping elements
-
-Simple difference:
-id = single unique element
-class = multiple elements
-
-Q7.How do you create a form in HTML?
-
-A form is created using the <form> tag.
-
-Example:
-
+Q7. HTML Form
 <form>
   <input type="text" placeholder="Enter your name">
   <input type="email" placeholder="Enter your email">
   <button type="submit">Submit</button>
 </form>
 
-A form collects user input and sends it to a server.
+Q8. Meta tags
 
-Q8.What are meta tags in HTML and why are they used?
-
-Meta tags provide information about a webpage.
-
-They are placed inside <head> and are not visible.
-
-Uses:
-
-SEO
-Page description
-Browser instructions
-
-Example:
+Meta tags provide information about the page.
 
 <meta name="description" content="HTML tutorial">
-Q9.Explain the purpose of the alt attribute in the <img> tag?
 
-The alt attribute describes the image.
+Used for SEO and browser instructions.
 
-It:
 
+Q9. alt attribute in image
+<img src="image.jpg" alt="A boy playing football">
 Shows text if image fails
 Helps screen readers
 Improves SEO
 
-Example:
-
-<img src="image.jpg" alt="A boy playing football">
-Q10.How do you make an image clickable in HTML?
-
-Wrap image inside <a> tag.
-
-Example:
-
+Q10. Clickable image
 <a href="https://example.com">
   <img src="image.jpg" alt="Click me">
 </a>
-Q11.What is the difference between JPG, PNG, SVG, and WebP?
 
-JPG:
+Q11. Image formats
+JPG → Small size, photos, no transparency
+PNG → High quality, supports transparency
+SVG → Vector, scalable
+WebP → Modern, small size + quality
 
-Small size
-Good for photos
-No transparency
-
-PNG:
-
-High quality
-Supports transparency
-
-SVG:
-
-Vector format
-Scalable without loss
-Best for logos
-
-WebP:
-
-Modern format
-Small size + good quality
-Q12.What are semantic tags in HTML5?
-
-Semantic tags define meaning of content.
+Q12. Semantic tags in HTML5
 
 Examples:
+<header> <footer> <section> <article>
 
-<header>
-<footer>
-<section>
-<article>
+Improve structure and readability.
 
-They improve structure and readability.
 
-Q13.What is the difference between <script>, async, and defer?
+Q13. script, async, defer
+script → blocks HTML loading
+async → runs when ready (no order)
+defer → runs after HTML loads (order maintained)
 
-script:
-
-Blocks HTML loading
-
-async:
-
-Runs when ready (no order)
-
-defer:
-
-Runs after HTML loads (in order)
-Q14.How do you embed audio and video in HTML5?
-
-Audio:
-
+Q14. Audio & Video
 <audio controls>
   <source src="audio.mp3" type="audio/mpeg">
 </audio>
 
-Video:
-
 <video controls width="300">
   <source src="video.mp4" type="video/mp4">
 </video>
-Q15.What is the difference between relative and absolute paths?
 
-Relative:
-
-Local file path
-Example: images/pic.jpg
-
-Absolute:
-
-Full URL
-Example: https://example.com/image.jpg
-Q16.What are data attributes (data-*)?
-
-Used to store extra data in HTML.
-
-Example:
-
+Q15. Relative vs Absolute path
+Relative → local file (images/pic.jpg)
+Absolute → full URL (https://example.com/image.jpg)
+Q16. data-* attributes
 <div data-user-id="101"></div>
 
-Used with JavaScript.
+Used to store extra data.
 
-Q17.What is viewport meta tag?
-
-Used for responsive design.
-
+Q17. Viewport meta tag
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-Makes website mobile friendly.
+Makes website responsive.
 
-Q18.How to improve SEO using HTML?
-Use headings properly
-Add title tag
-Add meta description
-Use semantic tags
-Add alt text
-Use proper links
-Q19.What are accessibility best practices?
-Use semantic tags
-Add alt text
-Use labels in forms
-Use proper headings
-Good color contrast
-Q20.What is difference between strong vs b and em vs i?
+Q18. SEO in HTML
+Proper headings
+Title tag
+Meta description
+Semantic tags
+Alt text
 
-strong:
+Q19. Accessibility best practices
+Semantic tags
+Alt text
+Form labels
+Proper headings
+Good contrast
 
-Important text
-
-b:
-
-Only bold
-
-em:
-
-Emphasized text
-
-i:
-
-Only italic
+Q20. strong vs b, em vs i
+strong → important text
+b → just bold
+em → emphasized text
+i → italic only
