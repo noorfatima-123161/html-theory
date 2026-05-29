@@ -55,13 +55,15 @@ Simple difference:
 Block elements are for structure, while inline elements are for styling or small content inside that structure.
 
 ##Q5.What is the purpose of the DOCTYPE declaration in HTML?
-The DOCTYPE declaration is used to tell the browser that the document is written in HTML5.
+The DOCTYPE declaration tells the browser which version of HTML the page is written in.
 
-It helps the browser show the webpage correctly.
+It helps the browser to:
 
-In simple words, it tells the browser: “This is an HTML page.”
+Render the page correctly
+Avoid displaying the page in “quirks mode”
+Follow modern HTML rules properly
 
-In HTML5, it is written like this:
+In HTML5, it is written simply as:
 
 <!DOCTYPE html>
 
@@ -81,8 +83,6 @@ Written like: class="box"
 
 Simple difference:
 id is for one unique element, while class is for multiple elements that share the same style or behavior.
-
-
 
 ##Q7.How do you create a form in HTML?
 You create a form in HTML using the <form> tag.
